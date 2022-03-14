@@ -14,11 +14,16 @@
     <script type="text/javascript" src="./main.js"></script>
     <main>
 
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
         <fieldset>
           <legend>Personal information</legend>
 
-          <label for="surname">Surname:</label>
+          <label
+          class="label"
+          for="surname"
+          >Surname:</label>
           <input type="text"
           id="surname"
           name="surname"
@@ -27,7 +32,8 @@
           maxlength="40"
           ><br>
 
-          <label for="name">Name:</label>
+          <label class="label"
+          for="name">Name:</label>
           <input type="text"
           id="name"
           name="name"
@@ -36,7 +42,7 @@
           maxlength="20"
           ><br>
 
-          <label for="old">How old are you?</label>
+          <label class="label" for="old">How old are you?</label>
           <input type="number"
           id="old" name="old"
           min="1"
@@ -44,7 +50,7 @@
           value="12"
           ><br>
 
-          <label for="birthDate">Full date of birth:</label>
+          <label class="label" for="birthDate">Full date of birth:</label>
           <input type="date"
           id="birthDate"
           name="birthDate"
@@ -56,13 +62,13 @@
           name="agreement"
           value="accept"
           >
-          <label for="agreement">I accept the term of the agreement</label><br>
+          <label class="label" for="agreement">I accept the term of the agreement</label><br>
         </fieldset>
 
         <fieldset>
           <legend>Registration</legend>
 
-          <label for="email">Email:</label>
+          <label class="label" for="email">Email:</label>
           <input type="email"
           id="email"
           name="email"
@@ -70,15 +76,15 @@
           required="required"
           ><br>
 
-          <label for="password">Password:</label>
+          <label class="label" for="password">Password:</label>
           <input type="password" id="password" name="password">
         </fieldset>
 
         <fieldset>
           <legend>Interesting facts about you!</legend>
 
-          <label for="cats">Do you love cats?</label>
-          <label for="yes">
+          <label class="label" for="cats">Do you love cats?</label>
+          <label class="label" for="yes">
             <input id="yes"
             type="radio"
             name="cats"
@@ -86,7 +92,7 @@
             >
             Yes
           </label>
-          <label for="no">
+          <label class="label" for="no">
             <input id="outdoor"
             type="radio"
             name="cats"
@@ -95,13 +101,17 @@
             No
           </label><br>
 
-          <label for="color">What is your favourite color?</label>
+          <label class="label" for="color">What is your favourite color?</label>
           <input type="color" id="color" name="color"><br>
 
-          <label for="time">What time do you go to bed?</label>
+          <label class="label" for="time">What time do you go to bed?</label>
           <input type="time" id="time" name="time"><br>
 
-          <label for="cars">What is your favourite brand of cars</label>
+          <label
+          class="label"
+          for="cars">
+          What is your favourite brand of cars
+          </label>
           <select multiple
           name="cars"
           id="cars"
@@ -117,7 +127,7 @@
             <option>Maserati</option>
           </select><br>
 
-          <label for="work">How do you rate our work?</label>
+          <label class="label" for="work">How do you rate our work?</label>
           <input type="range"
           id="work"
           name="work"
@@ -128,7 +138,7 @@
         <fieldset>
           <legend>Additional info</legend>
 
-          <label for="comments">Comments:</label>
+          <label class="label" for="comments">Comments:</label>
           <textarea
           id="comments"
           name="comments"
@@ -137,14 +147,14 @@
           >
           </textarea><br>
 
-          <label for="recommend">Would you recommend us?</label>
+          <label class="label" for="recommend">Would you recommend us?</label>
           <select name="recommend" id="recommend">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
         </fieldset>
 
-        <label>
+        <label class="label">
           <input id="submit"
           type="submit"
           name="submit"
